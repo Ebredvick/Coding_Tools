@@ -27,6 +27,11 @@ echo ~~~~~ Uninstall Complete ~~~~~
 exit /b
 
 :PostConfig
+if not exist %UserProfile%\dev (
+    mkdir %UserProfile%\dev
+)
+CALL gitbash\post.bat
+echo ~~~~~ Post Configuration Complete ~~~~~
 exit /b
 
 :Exit
