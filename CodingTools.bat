@@ -21,6 +21,7 @@ CALL gitbash\install.bat
 exit /b
 
 :UninstallAll
+CALL gitbash\uninstall.bat
 exit /b
 
 :PostConfig
