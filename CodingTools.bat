@@ -15,8 +15,9 @@ if !choice!==3 goto PostConfig
 if !choice!==4 exit
 
 :InstallAll
-CALL gitbash\install.bat
+CALL gitbash\setup.bat
 pause
+CALL gitbash\install.bat
 exit /b
 
 :UninstallAll
