@@ -15,7 +15,7 @@ if exist %INSTALLER% (
     echo 1. Install Current Version
     echo 2. Manually Download New Version
     set /p choice="Enter your choice: "
-    if !choice!==1 goto :Install
+    if !choice!==1 goto :End
     if !choice!==2 goto :DeleteDownload
     goto :Install
 ) else (
@@ -58,4 +58,5 @@ timeout /t 3 /nobreak > nul
 Exit directory of this script
 cd ..
 
+:End
 ENDLOCAL
