@@ -18,10 +18,12 @@ if !choice!==4 exit
 CALL gitbash\setup.bat
 pause
 CALL gitbash\install.bat
+echo ~~~~~ Installation Complete ~~~~~
 exit /b
 
 :UninstallAll
 CALL gitbash\uninstall.bat
+echo ~~~~~ Uninstall Complete ~~~~~
 exit /b
 
 :PostConfig
