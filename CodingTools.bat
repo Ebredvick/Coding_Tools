@@ -17,7 +17,7 @@ if !choice!==4 exit
 :InstallAll
 CALL gitbash\setup.bat
 pause
-::CALL gitbash\install.bat
+CALL gitbash\install.bat
 exit /b
 
 :UninstallAll
