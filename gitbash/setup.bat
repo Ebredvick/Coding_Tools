@@ -57,7 +57,7 @@ echo ~~~~~ Downloading %TOOL_NAME% ~~~~~
 curl -L -o %INSTALLER% %DOWNLOAD_URL%
 timeout /t 3 /nobreak > nul
 
-Exit directory of this script
+::Exit directory of this script
 cd ..
 
 :End
