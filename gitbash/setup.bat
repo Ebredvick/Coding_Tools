@@ -1,6 +1,8 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
+echo ~~~~~ Git Bash Setup ~~~~~
+
 ::Enter directory of this script
 cd ./gitbash
 

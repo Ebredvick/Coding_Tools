@@ -1,6 +1,8 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
+echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
+
 cd ./gitbash
 
 :: Read the config file
@@ -16,7 +18,6 @@ if exist %UNINSTALLER_0% (
 )
 
 :Uninstall
-echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
 if exist %UNINSTALLER% (
     call %UNINSTALLER% /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS
     rmdir /s /q "%UserProfile%\Git"
