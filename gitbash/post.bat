@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-echo ~~~~~ Configuring Git ~~~~~
+echo ~~~~~ Configuring %TOOL_NAME% ~~~~~
 
 cd ./gitbash
 

@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-echo ~~~~~ Anaconda Setup ~~~~~
+echo ~~~~~ %TOOL_NAME% Setup ~~~~~
 
 ::Enter directory of this script
 cd ./anaconda
