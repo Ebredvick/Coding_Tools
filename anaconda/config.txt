@@ -1,4 +1,4 @@
-TOOL_NAME=Anaconda 
+TOOL_NAME=Anaconda
 INSTALLER=anaconda.exe
 UNINSTALLER=%UserProfile%\anaconda3\Uninstall-Anaconda3.exe
 INSTALL_LOCATION=%UserProfile%\anaconda3

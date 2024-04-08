@@ -1,4 +1,4 @@
-TOOL_NAME=VsCode 
+TOOL_NAME=VsCode
 INSTALLER=vscode.exe
 UNINSTALLER_0="%LocalAppData%\Programs\Microsoft VS Code\unins000.exe"
 UNINSTALLER_1="%LocalAppData%\Programs\Microsoft VS Code\unins001.exe"

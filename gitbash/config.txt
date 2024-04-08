@@ -1,6 +1,6 @@
-TOOL_NAME=GitBash 
+TOOL_NAME=GitBash
 INSTALLER=GitBash.exe
-UNINSTALLER_0=%UserProfile%\Git\unins000.exe 
+UNINSTALLER_0=%UserProfile%\Git\unins000.exe
 UNINSTALLER_1=%UserProfile%\Git\unins001.exe
 INSTALL_LOCATION=%UserProfile%\Git
 GIT_BIN_PATH=%UserProfile%\Git\bin\git.exe
