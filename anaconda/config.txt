@@ -1,0 +1,6 @@
+TOOL_NAME=Anaconda 
+INSTALLER=anaconda.exe
+UNINSTALLER=%UserProfile%\anaconda3\Uninstall-Anaconda3.exe
+INSTALL_LOCATION=%UserProfile%\anaconda3
+SHORTCUT_PATH=%UserProfile%\Desktop 
+DOWNLOAD_URL="https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe"
