@@ -8,7 +8,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
     call set %%a=%%b
 )
 
-echo ~~~~~ Installing %TOOL_NAME% ~~~~~
+echo ~~~~~ Running %TOOL_NAME% Installer ~~~~~
 
 :Install
 %INSTALLER% /VERYSILENT

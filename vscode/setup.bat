@@ -9,7 +9,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
     call set %%a=%%b
 )
 
-echo ~~~~~ %TOOL_NAME% Setup ~~~~~
+echo ~~~~~ Running %TOOL_NAME% Setup ~~~~~
 
 :: Check if installer already exists
 if exist %INSTALLER% (
