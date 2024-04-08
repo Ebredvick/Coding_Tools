@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-cd ./gitbash
+cd ./vscode
 
 :: Read the config file
 for /f "tokens=1* delims==" %%a in (config.txt) do (
@@ -21,7 +21,7 @@ if exist %UNINSTALLER_0% (
 if exist %UNINSTALLER% (
     call %UNINSTALLER% /VERYSILENT
     rmdir /s /q "%LocalAppData%\Programs\Microsoft VS Code"
-    del "%UserProfile%\Desktop\Visual Studio Code.lnk"    
+    del "%UserProfile%\Desktop\VS Code.lnk"
 ) else (
     echo Uninstaller not found
 )
