@@ -11,7 +11,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 echo ~~~~~ Installing %TOOL_NAME% ~~~~~
 
 :Install
-%INSTALLER% /VERYSILENT /MERGETASKS=!runcode /DIR=%INSTALL_LOCATION%
+%INSTALLER% /VERYSILENT
 
 :: Exit directory of this script
 cd ..
