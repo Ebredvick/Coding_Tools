@@ -5,5 +5,5 @@ UNINSTALLER_1=%UserProfile%\Git\unins001.exe
 INSTALL_LOCATION=%UserProfile%\Git
 GIT_BIN_PATH=%UserProfile%\Git\bin\git.exe
 GIT_BASH_BIN_PATH=%UserProfile%\Git\git-bash.exe
-DESKTOP_PATH=%UserProfile%\Desktop 
+SHORTCUT_PATH=%UserProfile%\Desktop 
 DOWNLOAD_URL="https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe" 

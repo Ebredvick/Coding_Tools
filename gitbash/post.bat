@@ -37,6 +37,6 @@ echo export PATH="%USERPROFILE%/anaconda3:$PATH" >> %USERPROFILE%/.bashrc
 echo export HOME="%UserProfile%/dev" >> %UserProfile%\Git\etc\profile
 
 :: Create Shortcut On Desktop
-powershell -Command "$WScriptShell = New-Object -ComObject WScript.Shell; $Shortcut = $WScriptShell.CreateShortcut('"%DESKTOP_PATH%"\Git Bash.lnk'); $Shortcut.TargetPath = '!GIT_BASH_BIN_PATH!'; $Shortcut.Save()"
+powershell -Command "$WScriptShell = New-Object -ComObject WScript.Shell; $Shortcut = $WScriptShell.CreateShortcut('"%SHORTCUT_PATH%"\Git Bash.lnk'); $Shortcut.TargetPath = '!GIT_BASH_BIN_PATH!'; $Shortcut.Save()"
 pause
 cd ..
