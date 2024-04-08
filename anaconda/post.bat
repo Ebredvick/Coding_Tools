@@ -1,4 +1,7 @@
 @echo off
+SETLOCAL EnableDelayedExpansion
+
+cd ./anaconda
 
 :: Read the config file
 for /f "tokens=1* delims==" %%a in (config.txt) do (
@@ -7,3 +10,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 
 echo ~~~~~ Running %TOOL_NAME% Configuration ~~~~~
 echo Not Implemented
+
+cd ..
+
+ENDLOCAL
