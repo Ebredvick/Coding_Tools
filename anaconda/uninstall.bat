@@ -1,14 +1,14 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
-
 cd ./anaconda
 
 :: Read the config file
 for /f "tokens=1* delims==" %%a in (config.txt) do (
     call set %%a=%%b
 )
+
+echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
 
 :Uninstall
 call "%INSTALL_LOCATION%\Uninstall-Anaconda3.exe" /S

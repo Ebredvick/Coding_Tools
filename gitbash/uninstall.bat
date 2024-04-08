@@ -1,14 +1,14 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
-
 cd ./gitbash
 
 :: Read the config file
 for /f "tokens=1* delims==" %%a in (config.txt) do (
     call set %%a=%%b
 )
+
+echo ~~~~~ Running %TOOL_NAME% Uninstaller ~~~~~
 
 ::SET UNINSTALLER if _0 exists or _1 exists
 if exist %UNINSTALLER_0% (

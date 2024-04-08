@@ -1,14 +1,14 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
-echo ~~~~~ Configuring %TOOL_NAME% ~~~~~
-
 cd ./gitbash
 
 :: Read the config file
 for /f "tokens=1* delims==" %%a in (config.txt) do (
     call set %%a=%%b
 )
+
+echo ~~~~~ Configuring %TOOL_NAME% ~~~~~
 
 :: Set Home Directory
 ::echo export HOME="%UserProfile%/dev" >> %UserProfile%\Git\etc\profile
