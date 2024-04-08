@@ -15,17 +15,20 @@ if !choice!==3 goto UninstallAll
 if !choice!==4 exit
 
 :InstallAll
-::CALL anaconda\setup.bat
+CALL anaconda\setup.bat
 CALL gitbash\setup.bat
+CALL vscode\setup.bat
 pause
-::CALL anaconda\install.bat
+CALL anaconda\install.bat
 CALL gitbash\install.bat
+CALL vscode\install.bat
 echo ~~~~~ Installation Complete ~~~~~
 exit /b
 
 :UninstallAll
-::CALL anaconda\uninstall.bat
+CALL anaconda\uninstall.bat
 CALL gitbash\uninstall.bat
+CALL vscode\uninstall.bat
 echo ~~~~~ Uninstall Complete ~~~~~
 exit /b
 
@@ -33,8 +36,9 @@ exit /b
 if not exist %UserProfile%\dev (
     mkdir %UserProfile%\dev
 )
-::CALL anaconda\post.bat
+CALL anaconda\post.bat
 CALL gitbash\post.bat
+CALL vscode\post.bat
 echo ~~~~~ Post Configuration Complete ~~~~~
 exit /b
 
