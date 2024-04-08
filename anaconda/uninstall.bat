@@ -11,7 +11,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 )
 
 :Uninstall
-call "%INSTALL_LOCATION%\Uninstall-Anaconda3.exe"
+call "%INSTALL_LOCATION%\Uninstall-Anaconda3.exe" /S
 goto WaitForUninstall
 
 :WaitForUninstall
