@@ -1,0 +1,8 @@
+TOOL_NAME=VsCode 
+INSTALLER=vscode.exe
+UNINSTALLER_0=%UserProfile%\Microsoft VS Code\unins000.exe
+UNINSTALLER_1=%UserProfile%\Microsoft VS Code\unins001.exe
+INSTALL_LOCATION="%UserProfile%\Microsoft VS Code"
+VSCODE_PATH=%UserProfile%\Microsoft VS Code\Code.exe
+SHORTCUT_PATH=%UserProfile%\Desktop
+DOWNLOAD_URL="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
