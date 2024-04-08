@@ -23,7 +23,7 @@ CALL anaconda\install.bat
 CALL gitbash\install.bat
 CALL vscode\install.bat
 echo ~~~~~ Installation Complete ~~~~~
-exit /b
+goto PostConfig
 
 :UninstallAll
 CALL anaconda\uninstall.bat
