@@ -20,11 +20,13 @@ if exist %UNINSTALLER_0% (
 :Uninstall
 if exist %UNINSTALLER% (
     call %UNINSTALLER% /VERYSILENT
-    rmdir /s /q "%LocalAppData%\Programs\Microsoft VS Code"
-    del "%UserProfile%\Desktop\VS Code.lnk"
 ) else (
     echo Uninstaller not found
 )
+
+rmdir /s /q "%LocalAppData%\Programs\Microsoft VS Code"
+rmdir /s /q "%APPDATA%\Code"
+del "%UserProfile%\Desktop\VS Code.lnk"
 
 cd ..
 ENDLOCAL
