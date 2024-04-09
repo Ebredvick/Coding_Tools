@@ -1,0 +1,11 @@
+{
+    //Terminal
+    "terminal.integrated.shell.windows": "C:\\Users\\vboxuser\\Git\\bin\\bash.exe",
+    "terminal.integrated.scrollback": 99999999999,
+    //Workbench
+    "workbench.colorTheme": "Default High Contrast",
+    //Editor
+    "editor.wordWrap": "on",
+    "terminal.external.windowsExec": "C:\\Users\\vboxuser\\Git\\bin\\bash.exe",
+    "terminal.integrated.defaultProfile.windows": "Git Bash"
+}

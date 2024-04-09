@@ -10,6 +10,13 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 
 echo ~~~~~ Running %TOOL_NAME% Configuration ~~~~~
 
+::check if necessary folders exist
+if not exist %APPDATA%/Roaming/Code/User (
+    mkdir %APPDATA%/Roaming/Code/User
+)
+
+copy settings.json %APPDATA%/Roaming/Code/User/settings.json
+
 powershell -Command "$WScriptShell = New-Object -ComObject WScript.Shell; $Shortcut = $WScriptShell.CreateShortcut('%SHORTCUT_PATH%\VS Code.lnk'); $Shortcut.TargetPath = '%VSCODE_PATH%'; $Shortcut.Save()"
 
 cd ..
