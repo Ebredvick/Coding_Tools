@@ -23,10 +23,10 @@ if not exist .bash_profile (
 
 :MoveFiles
 :: Move Git Bash Files
-copy .gitconfig %USERPROFILE%/.gitconfig
-copy .bashrc %USERPROFILE%/.bashrc
-copy .bash_profile %USERPROFILE%/.bash_profile
-goto :End
+xcopy .\.gitconfig %USERPROFILE%
+xcopy .\.bashrc %USERPROFILE%
+xcopy .\.bash_profile %USERPROFILE%
+goto End
 
 :CreateFiles
 :: Set User Name and Email

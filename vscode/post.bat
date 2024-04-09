@@ -15,7 +15,7 @@ if not exist %APPDATA%/Roaming/Code/User (
     mkdir %APPDATA%/Roaming/Code/User
 )
 
-copy settings.json %APPDATA%/Roaming/Code/User/settings.json
+xcopy .\settings.json %APPDATA%\Roaming\Code\User /i
 
 powershell -Command "$WScriptShell = New-Object -ComObject WScript.Shell; $Shortcut = $WScriptShell.CreateShortcut('%SHORTCUT_PATH%\VS Code.lnk'); $Shortcut.TargetPath = '%VSCODE_PATH%'; $Shortcut.Save()"
 
