@@ -20,16 +20,18 @@ if exist %UNINSTALLER_0% (
 :Uninstall
 if exist %UNINSTALLER% (
     call %UNINSTALLER% /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS
-    rmdir /s /q "%UserProfile%\Git"
-    del "%UserProfile%\Desktop\Git Bash.lnk"
     ::Delete Git files
-    del /f /q "%UserProfile%\.bash_history"
-    del /f /q "%UserProfile%\.bashrc"
-    del /f /q "%UserProfile%\.bash_profile"
-    del /f /q "%UserProfile%\.gitconfig"
+
 ) else (
     echo Uninstaller not found
 )
+
+rmdir /s /q "%UserProfile%\Git"
+del "%UserProfile%\Desktop\Git Bash.lnk"
+del /f /q "%UserProfile%\.bash_history"
+del /f /q "%UserProfile%\.bashrc"
+del /f /q "%UserProfile%\.bash_profile"
+del /f /q "%UserProfile%\.gitconfig"
 
 cd ..
 ENDLOCAL
