@@ -10,9 +10,25 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 
 echo ~~~~~ Configuring %TOOL_NAME% ~~~~~
 
-:: Set Home Directory
-::echo export HOME="%UserProfile%/dev" >> %UserProfile%\Git\etc\profile
+::check if necessary files exist
+if not exist .gitconfig (
+    goto :CreateFiles
+)
+if not exist .bashrc (
+    goto :CreateFiles
+)
+if not exist .bash_profile (
+    goto :CreateFiles
+)
 
+:MoveFiles
+:: Move Git Bash Files
+move .gitconfig %USERPROFILE%
+move .bashrc %USERPROFILE%
+move .bash_profile %USERPROFILE%
+goto :End
+
+:CreateFiles
 :: Set User Name and Email
 set /p GIT_NAME="Enter Your Git User Name: "
 set /p GIT_EMAIL="Enter Your Git Email: "
@@ -35,6 +51,8 @@ if exist %UserProfile%\.bash_profile (
 )
 echo source ~/.bashrc >> %UserProfile%\.bash_profile
 
+:End
 :: Create Shortcut On Desktop
 powershell -Command "$WScriptShell = New-Object -ComObject WScript.Shell; $Shortcut = $WScriptShell.CreateShortcut('"%SHORTCUT_PATH%"\Git Bash.lnk'); $Shortcut.TargetPath = '!GIT_BASH_BIN_PATH!'; $Shortcut.Save()"
 cd ..
+ENDLOCAL
