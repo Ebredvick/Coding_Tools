@@ -20,12 +20,11 @@ if exist %UNINSTALLER_0% (
 :Uninstall
 if exist %UNINSTALLER% (
     call %UNINSTALLER% /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS
-    ::Delete Git files
-
 ) else (
     echo Uninstaller not found
 )
 
+:Cleanup
 rmdir /s /q "%UserProfile%\Git"
 del "%UserProfile%\Desktop\Git Bash.lnk"
 del /f /q "%UserProfile%\.bash_history"
@@ -33,6 +32,8 @@ del /f /q "%UserProfile%\.bashrc"
 del /f /q "%UserProfile%\.bash_profile"
 del /f /q "%UserProfile%\.gitconfig"
 
+:End
 cd ..
 ENDLOCAL
+
 exit /b

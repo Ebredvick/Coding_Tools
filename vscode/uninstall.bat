@@ -24,10 +24,13 @@ if exist %UNINSTALLER% (
     echo Uninstaller not found
 )
 
+:Cleanup
 rmdir /s /q "%LocalAppData%\Programs\Microsoft VS Code"
 rmdir /s /q "%APPDATA%\Code"
+rmdir /s /q "%UserProfile%\.vscode"
 del "%UserProfile%\Desktop\VS Code.lnk"
 
+:End
 cd ..
 ENDLOCAL
 exit /b

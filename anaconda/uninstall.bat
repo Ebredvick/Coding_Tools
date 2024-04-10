@@ -25,8 +25,13 @@ if errorlevel 1 (
 )
 
 :Cleanup
-del /s /q "%UserProfile%\anaconda3"
+rmdir /s /q "%UserProfile%\anaconda3"
+rmdir /s /q "%UserProfile%\.condarc"
+rmdir /s /q "%UserProfile%\.anaconda"
+rmdir /s /q "%UserProfile%\.continuum"
+rmdir /s /q "%UserProfile%\.conda"
 
+:End
 cd ..
 ENDLOCAL
 exit /b
