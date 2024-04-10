@@ -23,9 +23,9 @@ if not exist .bash_profile (
 
 :MoveFiles
 :: Move Git Bash Files
-xcopy .\.gitconfig %USERPROFILE%
-xcopy .\.bashrc %USERPROFILE%
-xcopy .\.bash_profile %USERPROFILE%
+xcopy .\.gitconfig %USERPROFILE% /y /i
+xcopy .\.bashrc %USERPROFILE% /y /i
+xcopy .\.bash_profile %USERPROFILE% /y /i
 goto End
 
 :CreateFiles
