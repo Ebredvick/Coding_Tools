@@ -1,6 +1,9 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 
+::Set Working Directory to the location of this script
+cd /d %~dp0
+
 ::Install Menu
 
 echo 1. Install All
