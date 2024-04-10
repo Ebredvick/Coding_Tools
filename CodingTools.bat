@@ -31,6 +31,7 @@ CALL anaconda\uninstall.bat
 CALL gitbash\uninstall.bat
 CALL vscode\uninstall.bat
 echo ~~~~~ Uninstall Complete ~~~~~
+pause
 exit /b
 
 :PostConfig
@@ -41,6 +42,7 @@ CALL anaconda\post.bat
 CALL gitbash\post.bat
 CALL vscode\post.bat
 echo ~~~~~ Post Configuration Complete ~~~~~
+pause
 exit /b
 
 :Exit
