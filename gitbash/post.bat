@@ -10,24 +10,6 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 
 echo ~~~~~ Configuring %TOOL_NAME% ~~~~~
 
-::check if necessary files exist
-if not exist .gitconfig (
-    goto :CreateFiles
-)
-if not exist .bashrc (
-    goto :CreateFiles
-)
-if not exist .bash_profile (
-    goto :CreateFiles
-)
-
-:MoveFiles
-:: Move Git Bash Files
-xcopy .\.gitconfig %USERPROFILE% /y /i
-xcopy .\.bashrc %USERPROFILE% /y /i
-xcopy .\.bash_profile %USERPROFILE% /y /i
-goto End
-
 :CreateFiles
 :: Set User Name and Email
 set /p GIT_NAME="Enter Your Git User Name: "
