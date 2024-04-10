@@ -18,6 +18,7 @@ if !choice!==4 exit
 CALL anaconda\setup.bat
 CALL gitbash\setup.bat
 CALL vscode\setup.bat
+echo ~~~~~ Ready to Install ~~~~~
 pause
 CALL anaconda\install.bat
 CALL gitbash\install.bat
