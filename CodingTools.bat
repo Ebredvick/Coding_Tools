@@ -2,6 +2,16 @@
 SETLOCAL EnableDelayedExpansion
 
 ::Set Working Directory to the location of this script
+@echo off
+net session >nul 2>&1
+if %errorlevel% == 0 (
+    echo Running as Administrator
+) else (
+    echo ##### Not running as Administrator #####
+    echo RUN AS Administrator
+    pause
+    exit /b
+)
 cd /d %~dp0
 
 ::Install Menu
