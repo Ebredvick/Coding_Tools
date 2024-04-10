@@ -9,7 +9,7 @@ for /f "tokens=1* delims==" %%a in (config.txt) do (
 )
 
 echo ~~~~~ Running %TOOL_NAME% Configuration ~~~~~
-echo Not Implemented
+xcopy .\.condarc %USERPROFILE% /i /y
 
 cd ..
 
