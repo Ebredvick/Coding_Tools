@@ -24,8 +24,10 @@ set /p GIT_EMAIL="Enter Your Git Email: "
 if exist %UserProfile%\.bashrc (
     del %UserProfile%\.bashrc
 )
+
 echo . /c/Users/%USERNAME%/anaconda3/etc/profile.d/conda.sh >> %USERPROFILE%/.bashrc
 echo export PATH="%USERPROFILE%/anaconda3:$PATH" >> %USERPROFILE%/.bashrc
+echo conda activate base >> %USERPROFILE%/.bashrc
 
 ::Create .bash_profile
 if exist %UserProfile%\.bash_profile (
