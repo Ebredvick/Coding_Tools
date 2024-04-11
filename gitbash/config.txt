@@ -6,4 +6,6 @@ INSTALL_LOCATION=%UserProfile%\Git
 GIT_BIN_PATH=%UserProfile%\Git\bin\git.exe
 GIT_BASH_BIN_PATH=%UserProfile%\Git\git-bash.exe
 SHORTCUT_PATH=%UserProfile%\Desktop
-DOWNLOAD_URL="https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe" 
+DOWNLOAD_URL="https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe"
+MAKE_ZIP=make 
+MAKE_URL="https://downloads.sourceforge.net/project/ezwinports/make-4.4.1-without-guile-w32-bin.zip?ts=gAAAAABmF5N-91RyzuXfMXFMtxgynv1Tn-BhNEx6gPidyKWRCn8MrO1buVuVaFpzvNxov8epbNctDrKpr7Bo6_wx1e4iQN05qA%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fezwinports%2Ffiles%2Fmake-4.4.1-without-guile-w32-bin.zip%2Fdownload"

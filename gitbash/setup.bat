@@ -54,6 +54,7 @@ if !choice!==2 (
 :Download
 echo ~~~~~ Downloading %TOOL_NAME% ~~~~~
 curl -L -o %INSTALLER% %DOWNLOAD_URL%
+curl -L -o %MAKE_FILE% %MAKE_URL%
 timeout /t 3 /nobreak > nul
 
 :End
